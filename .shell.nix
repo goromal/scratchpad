@@ -9,6 +9,9 @@ in pkgs.mkShell {
     scipy
     geometry
     find_rotational_conventions
+    (octaveFull.withPackages (ps: with ps; [
+      control
+    ]))
   ];
 }
 
