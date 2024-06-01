@@ -8,6 +8,9 @@ in pkgs.mkShell {
     numpy
     scipy
     geometry
+    pysignals
+    pyceres_factors
+    mesh-plotter
     find_rotational_conventions
   ];
 }
