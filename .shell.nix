@@ -7,6 +7,7 @@ in pkgs.mkShell {
     py
     numpy
     scipy
+    manim
     geometry
     pysignals
     pyceres_factors
