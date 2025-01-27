@@ -7,6 +7,7 @@ in pkgs.mkShell {
     py
     numpy
     scipy
+    requests
     geometry
     pysignals
     pyceres
@@ -14,10 +15,10 @@ in pkgs.mkShell {
     mesh-plotter
     find_rotational_conventions
     symforce
+    sympy
     graphviz
     (octaveFull.withPackages (ps: with ps; [
       control
     ]))
   ];
 }
-
