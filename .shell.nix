@@ -14,7 +14,7 @@ in pkgs.mkShell {
     mesh-plotter
     find_rotational_conventions
     symforce
-    nano-pgo
+    graphviz
     (octaveFull.withPackages (ps: with ps; [
       control
     ]))
