@@ -1,6 +1,6 @@
 let
-  pkgs = import (builtins.fetchTarball "https://github.com/goromal/anixpkgs/archive/refs/tags/v6.0.0.tar.gz") {};
-  py = pkgs.python311; # should match the version used with sage TODO tightly couple these to anix version
+  pkgs = import (builtins.fetchTarball "https://github.com/goromal/anixpkgs/archive/refs/tags/v8.12.2.tar.gz") {};
+  py = pkgs.python313; # should match the version used with sage TODO tightly couple these to anix version
 in pkgs.mkShell {
   buildInputs = with pkgs; with py.pkgs; [
     sage
