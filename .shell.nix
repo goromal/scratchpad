@@ -1,6 +1,5 @@
 let
-  # TODO: repin to release tag once dev/indi-harness lands
-  pkgs = import (builtins.fetchTarball "https://github.com/goromal/anixpkgs/archive/refs/heads/dev/indi-harness.tar.gz") {};
+  pkgs = import (builtins.fetchTarball "https://github.com/goromal/anixpkgs/archive/refs/tags/v8.38.11.tar.gz") {};
   py = pkgs.python313; # should match the version used with sage TODO tightly couple these to anix version
 in pkgs.mkShell {
   buildInputs = with pkgs; with py.pkgs; [
