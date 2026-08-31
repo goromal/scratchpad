@@ -6,6 +6,7 @@ in pkgs.mkShell {
     sage
     py
     numpy
+    opencv4
     scipy
     geometry
     pysignals
