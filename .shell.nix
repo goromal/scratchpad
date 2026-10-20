@@ -13,6 +13,7 @@ in pkgs.mkShell {
     pyceres_factors
     mesh-plotter
     indi-harness
+    pymavlink
     find_rotational_conventions
     (octaveFull.withPackages (ps: with ps; [
       control
