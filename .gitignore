@@ -1,2 +1,7 @@
 *.pyc
 **/*checkpoint.ipynb*
+
+# Large ACME lab datasets, downloaded on demand by the notebooks that use them
+acme/**/data/faces94.zip
+acme/**/data/HeartMatrixA.npz
+acme/**/data/HeartMatrixD.npy
